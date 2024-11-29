@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-gray-50;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-kashmir-600 text-white rounded-md hover:bg-kashmir-700 transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-white text-kashmir-600 border border-kashmir-600 rounded-md hover:bg-kashmir-50 transition-colors duration-200;
+  }
+}

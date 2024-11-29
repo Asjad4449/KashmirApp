@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "es2017", // Modern JavaScript target
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // Libraries used in your project
+    "allowJs": true, // Allow JavaScript files in the project
+    "skipLibCheck": true, // Skip type-checking of declaration files
+    "strict": true, // Enable strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in file names
+    "noEmit": true, // Prevent output of compiled files
+    "esModuleInterop": true, // Support ES Module syntax in CommonJS
+    "module": "esnext", // Use ESNext module resolution
+    "moduleResolution": "node", // Resolve modules using Node.js
+    "resolveJsonModule": true, // Enable importing JSON files
+    "isolatedModules": true, // Ensure each file is treated as a module
+    "jsx": "preserve", // Preserve JSX for React
+    "baseUrl": ".", // Base directory for module resolution
+    "paths": {
+      "@/lib/*": [
+        "src/lib/*"
+      ], // Alias for @/lib
+      "@/components/*": [
+        "src/components/*"
+      ], // Alias for @/components
+      "@/pages/*": [
+        "src/pages/*"
+      ], // Alias for @/pages
+      "@/styles/*": [
+        "src/styles/*"
+      ] // Alias for styles (if needed)
+    },
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ], // Files to include in compilation
+  "exclude": [
+    "node_modules"
+  ] // Exclude dependencies
+}
